@@ -1,16 +1,14 @@
 # YuWeiFlutterApp
 
-A new Flutter project.
+## 创建时间 2020-12-21
 
-## Getting Started
+- component : 组件文件见
 
-This project is a starting point for a Flutter application.
+- data : 静态渲染数据
 
-A few resources to get you started if this is your first Flutter project:
+- models : 模型数据
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- util : 工具类
+    - color : 颜色文件
+    
+- widget : 散装组件
