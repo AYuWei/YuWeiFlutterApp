@@ -1,14 +1,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.YuWeiFlutterApp">
+    <!-- 英特尔 -->
+    <uses-permission android:name="android.permission.INTERNET" /> 
+    <!-- 文件存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- GPS定位 ACCESS_FINE_LOCATION location-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/> 
+
+
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
          In most cases you can leave this as-is, but you if you want to provide
          additional functionality it is fine to subclass or reimplement
-         FlutterApplication and put your custom class here. -->
-    <application
+         FlutterApplication and put your custom class here. 
+        
+        
         android:name="io.flutter.app.FlutterApplication"
+         
+         -->
+    <application
         android:label="YuWeiFlutterApp"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/app_log">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -20,10 +37,15 @@
                  the Android process has started. This theme is visible to the user
                  while the Flutter UI initializes. After that, this theme continues
                  to determine the Window background behind the Flutter UI. -->
-            <meta-data
+             <!-- <meta-data
+              android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+              android:value="true" 
+             /> -->
+
+            <!-- <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
-              />
+              /> -->
             <!-- Displays an Android View that continues showing the launch screen
                  Drawable until Flutter paints its first frame, then this splash
                  screen fades out. A splash screen is useful to avoid any visual
@@ -43,5 +65,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        
+        
     </application>
 </manifest>
